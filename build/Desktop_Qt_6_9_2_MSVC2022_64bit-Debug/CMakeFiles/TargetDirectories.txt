@@ -1,5 +1,0 @@
-D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/CMakeFiles/SimplePTZ.dir
-D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/CMakeFiles/edit_cache.dir
-D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/CMakeFiles/rebuild_cache.dir
-D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/CMakeFiles/SimplePTZ_autogen_timestamp_deps.dir
-D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/CMakeFiles/SimplePTZ_autogen.dir
