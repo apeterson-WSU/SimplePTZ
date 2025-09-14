@@ -5,6 +5,32 @@
 #include <QMainWindow>
 #include <QSerialPort>
 #include <QSettings>
+#include <QAction>
+#include <QCloseEvent>
+#include <QComboBox>
+#include <QCursor>
+#include <QDebug>
+#include <QFont>
+#include <QGridLayout>
+#include <QHBoxLayout>
+#include <QInputDialog>
+#include <QLabel>
+#include <QListWidget>
+#include <QMenu>
+#include <QMessageBox>
+#include <QPlainTextEdit>
+#include <QPushButton>
+#include <QResizeEvent>
+#include <QSerialPortInfo>
+#include <QSlider>
+#include <QSpacerItem>
+#include <QSpinBox>
+#include <QTextOption>
+#include <QTimer>
+#include <QVBoxLayout>
+#include <algorithm>
+#include <memory>
+
 
 class QLabel;
 class QSpinBox;
@@ -58,7 +84,7 @@ private slots:
 private:
     // UI: Pointers
     std::unique_ptr<QWidget> central{nullptr};
-
+    std::unique_ptr<QVBoxLayout> rootV{nullptr};
     // UI: Profiles
     QComboBox *profileCombo{};
     QPushButton *profileManageBtn{};

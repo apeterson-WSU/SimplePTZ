@@ -1,30 +1,5 @@
-#include "mainwindow.h"
 
-#include <QAction>
-#include <QCloseEvent>
-#include <QComboBox>
-#include <QCursor>
-#include <QDebug>
-#include <QFont>
-#include <QGridLayout>
-#include <QHBoxLayout>
-#include <QInputDialog>
-#include <QLabel>
-#include <QListWidget>
-#include <QMenu>
-#include <QMessageBox>
-#include <QPlainTextEdit>
-#include <QPushButton>
-#include <QResizeEvent>
-#include <QSerialPortInfo>
-#include <QSlider>
-#include <QSpacerItem>
-#include <QSpinBox>
-#include <QTextOption>
-#include <QTimer>
-#include <QVBoxLayout>
-#include <algorithm>
-#include <memory>
+#include "mainwindow.h"
 
 static const char *KEY_PROFILES_LIST = "profiles/list";
 static const char *KEY_PROFILES_CURR = "profiles/current";
@@ -61,7 +36,9 @@ void MainWindow::buildUi()
 
     //auto *central = new QWidget(this);
     central = make_unique<QWidget>(this);
-    auto *rootV = new QVBoxLayout(central.get());
+    //auto *rootV = new QVBoxLayout(central.get());
+    rootV = make_unique<QVBoxLayout>(central.get());
+
     rootV->setContentsMargins(6, 6, 6, 6);
     rootV->setSpacing(6);
 
