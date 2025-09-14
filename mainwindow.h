@@ -1,10 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QListWidgetItem>
 #include <QMainWindow>
 #include <QSerialPort>
 #include <QSettings>
-#include <QListWidgetItem>
 
 class QLabel;
 class QSpinBox;
@@ -56,21 +56,24 @@ private slots:
     void execSelectedCommand();
 
 private:
+    // UI: Pointers
+    std::unique_ptr<QWidget> central{nullptr};
+
     // UI: Profiles
-    QComboBox   *profileCombo{};
+    QComboBox *profileCombo{};
     QPushButton *profileManageBtn{};
 
     // UI: Ports
-    QComboBox   *portCombo{};
+    QComboBox *portCombo{};
     QPushButton *connectButton{};
 
     // UI: Power
-    QLabel      *powerLabel{};
+    QLabel *powerLabel{};
     QPushButton *powerButton{};
 
     // UI: Presets
-    QLabel      *presetCountLabel{};
-    QSpinBox    *presetCountSpin{};
+    QLabel *presetCountLabel{};
+    QSpinBox *presetCountSpin{};
     QListWidget *presetList{};
 
     // UI: PTZ pad
@@ -94,7 +97,7 @@ private:
     QSlider *zoomSpeed{};
 
     // UI: Custom VISCA command
-    QComboBox   *cmdCombo{};
+    QComboBox *cmdCombo{};
     QPushButton *cmdExecButton{};
 
     // UI: Responses view + title
@@ -103,8 +106,8 @@ private:
 
     // Core
     QSerialPort serial;
-    QByteArray  rxBuf;
-    QSettings   settings; // ("", "SimplePTZ")
+    QByteArray rxBuf;
+    QSettings settings; // ("", "SimplePTZ")
 
     enum class PowerState { Unknown, On, Off };
     PowerState powerState{PowerState::Unknown};
@@ -125,7 +128,7 @@ private:
     void populatePresets(int count);
     void ensurePresetNamesSize(const QString &profile, int count);
     void updatePresetListHeight();
-    int  rxTwoLineMinHeight() const;
+    int rxTwoLineMinHeight() const;
 
     // VISCA helpers
     void sendVisca(const QByteArray &bytes);
@@ -138,11 +141,11 @@ private:
     void viscaPowerOff();
     void setPowerUi(PowerState s);
 
-    void sendRecallPreset(int n);         // n = 0..15
-    void sendStorePreset(int n);          // n = 0..15
-    void sendPanTilt(int dx, int dy);     // dx,dy ∈ {-1,0,1}
+    void sendRecallPreset(int n);     // n = 0..15
+    void sendStorePreset(int n);      // n = 0..15
+    void sendPanTilt(int dx, int dy); // dx,dy ∈ {-1,0,1}
     void sendPanTiltStop();
-    void sendZoom(bool tele, int speed);  // tele=true zoom in; speed 0..7
+    void sendZoom(bool tele, int speed); // tele=true zoom in; speed 0..7
     void sendZoomStop();
     void sendRefocus();
 

@@ -1,0 +1,18 @@
+# ninja log v6
+4	240	7795762162422984	SimplePTZ_autogen/timestamp	b70da5813f480df0
+4	240	7795762162422984	SimplePTZ_autogen/mocs_compilation.cpp	b70da5813f480df0
+4	240	7795762162422984	D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/SimplePTZ_autogen/timestamp	b70da5813f480df0
+4	240	7795762162422984	D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/SimplePTZ_autogen/mocs_compilation.cpp	b70da5813f480df0
+756	870	7795762168013193	CMakeFiles/SimplePTZ.dir/appicon.rc.res	bffed1d7c3b2dccc
+750	3512	7795762167958130	CMakeFiles/SimplePTZ.dir/main.cpp.obj	5f799aa75e5ee270
+747	3595	7795762167918131	CMakeFiles/SimplePTZ.dir/SimplePTZ_autogen/mocs_compilation.cpp.obj	3eb245783d182458
+753	3980	7795762167978154	CMakeFiles/SimplePTZ.dir/mainwindow.cpp.obj	f134b88002fb2308
+3981	4375	7795762200259531	SimplePTZ.exe	ae971862d279755e
+17	260	7795769700621843	SimplePTZ_autogen/timestamp	b70da5813f480df0
+17	260	7795769700621843	SimplePTZ_autogen/mocs_compilation.cpp	b70da5813f480df0
+17	260	7795769700621843	D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/SimplePTZ_autogen/timestamp	b70da5813f480df0
+17	260	7795769700621843	D:/Repositories(Live)/PTZ/SimplePTZ/build/Desktop_Qt_6_9_2_MSVC2022_64bit-Debug/SimplePTZ_autogen/mocs_compilation.cpp	b70da5813f480df0
+264	3224	7795769701100952	CMakeFiles/SimplePTZ.dir/main.cpp.obj	5f799aa75e5ee270
+261	3321	7795769701070953	CMakeFiles/SimplePTZ.dir/SimplePTZ_autogen/mocs_compilation.cpp.obj	3eb245783d182458
+267	3741	7795769701132157	CMakeFiles/SimplePTZ.dir/mainwindow.cpp.obj	f134b88002fb2308
+3741	3925	7795769735865371	SimplePTZ.exe	ae971862d279755e
